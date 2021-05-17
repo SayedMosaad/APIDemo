@@ -33,21 +33,7 @@ namespace Commander.Controllers
             return Ok(mapper.Map<IEnumerable<CommandRead>>(commands));
         }
 
-        //[HttpGet("{id}")]
-        //public ActionResult<Command> GetCommand(int id)
-        //{
-        //    var command = repo.GetCpmmandById(id);
-        //    if(command!=null)
-        //    {
-        //        return Ok(command);
-        //    }
-        //    else
-        //    {
-        //        return NotFound();
-        //    }
-
-        //}
-
+        
         [HttpGet("{id}", Name = "GetCommandById")]
         public ActionResult<CommandRead> GetCommand(int id)
         {
